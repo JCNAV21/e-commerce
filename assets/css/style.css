@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+/*HEADER Y NAV*/
+.header{
+    background-color: brown;
+    width: 100%;
+}
+
+.nav{
+    background-color: lightcoral;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 3rem;    */
+}
+
+
+.ul-nav{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.ul-nav a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.icon-wb{
+    width: 100px;
+    justify-items: center;
+    padding-left: 1rem;
+}
+
+.txt-store{
+    font-size: 30px;
+}
+
+/* .txt-store{
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: solid;
+} */
+
+.text-nav{
+    display: none;
+}
+
+
+.div-icons{
+    /* width: 100px;
+    height: 30px; */
+    /* margin-left: 50%;
+    margin-right: 10rem; */
+    display: flex;
+    gap: 50px;
+
+}
+
+
+/*DIV DEL PRODUCTO PRINCIPAL*/
+
+.principal-product{
+    width: 100%;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+}
+
+.home-p{
+    margin-left: 40%;
+    margin-top: 60px;
+    margin-right: 10%;
+    max-height: 60%;
+    max-width: 60%;
+}
+
+.text-home-product{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 3rem;
+}
+
+.p-description{
+    font-size: 20px;
+}
+
+.text-home-product>span{
+    color: tomato;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.add-cart{
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+    border-radius: 10%;
+    background-color: rgb(35, 32, 32);
+    width: 160px;
+    height: 60px;
+    align-self: center;
+}
+
+/*DIV DE LA CANTIDAD DE PRODUCTOS*/
+
+.product-number{
+    width: 100%;
+    background-color: lightcoral;
+    margin-top: 30px;
+    text-align: center;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    align-content: center;
+}
+
+
+.category-box{
+    width: 120px;
+    height: 80px;
+    background-color: aquamarine;
+}
+
+.category-box>p{
+    margin-bottom: 15px;
+}
+
+
+    /*DIV BOTONES CANTIDAD DE PRODUCTOS*/
+
+    
+
+
+
+
+@media screen and (min-width: 900px){
+    .text-nav{
+        display: flex;
+        font-size: 1.5rem;
+        margin: 1rem;
+        text-decoration: none;
+    }
+    .text-nav>a{
+        text-decoration: none;
+        color: black;
+    }
+    .text-nav:hover{
+        cursor: pointer;
+        color: red;
+    }
+
+    /*DIV PRINCIPAL*/
+    .principal-product{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 750px;
+    }
+    .home-p{
+        margin-left: 0;
+        margin-top: 60px;
+        margin-right: 10%;
+        max-height: 60%;
+        max-width: 60%;
+    }
+
+    .text-home-product{
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 10%;
+    }
+
+
+
+}
