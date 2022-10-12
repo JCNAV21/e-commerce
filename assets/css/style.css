@@ -1,3 +1,35 @@
+
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --first-color: hsl(354, 78%, 60%);
+  --button-color: hsl(0, 0%, 17%);
+  --button-color-alt: hsl(0, 0%, 21%);
+  --card-color: hsl(0, 0%, 90%);
+  --title-color: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 35%);
+  --text-color-light: hsl(0, 0%, 55%);
+  --body-color: hsl(206, 4%, 97%);
+  --container-color: #fff;
+  --border-color: hsl(0, 0%, 94%);
+
+ 
+}
+
+/*=============== THEME ===============*/
+/*========== Variables Dark theme ==========*/
+/*
+    --first-color: hsl(182, 53%, 74%);
+    --button-color: hsl(246, 16%, 12%);
+    --button-color-alt: hsl(0, 0%, 28%);
+    --card-color: hsla(246, 16%, 5%, .5);
+    --title-color: hsl(0, 0%, 95%);
+    --text-color: hsl(0, 0%, 75%);
+    --body-color: hsl(249, 19%, 14%);
+    --container-color: hsl(246, 16%, 12%);
+    --border-color: hsl(0, 0%, 20%);
+*/
 *{
     margin: 0;
     padding: 0;
@@ -9,16 +41,29 @@
 body{
     height: 100%;
     width: 100%;
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+body.dark{
+    --first-color: hsl(182, 53%, 74%);
+    --button-color: hsl(246, 16%, 12%);
+    --button-color-alt: hsl(0, 0%, 28%);
+    --card-color: hsla(246, 16%, 5%, .5);
+    --title-color: hsl(0, 0%, 95%);
+    --text-color: hsl(0, 0%, 75%);
+    --body-color: hsl(249, 19%, 14%);
+    --container-color: hsl(246, 16%, 12%);
+    --border-color: hsl(0, 0%, 20%);
 }
 
 /*HEADER Y NAV*/
 .header{
-    background-color: brown;
+    /*background-color: brown;*/
     width: 100%;
 }
 
 .nav{
-    background-color: lightcoral;
+   /* background-color: lightcoral;*/
     width: 100%;
     display: flex;
     align-items: center;
@@ -75,7 +120,7 @@ body{
 
 .principal-product{
     width: 100%;
-    /* background-color: lightgreen; */
+    background-color: var(--container-color);
     display: flex;
     flex-direction: column;
 }
@@ -86,6 +131,7 @@ body{
     margin-right: 10%;
     max-height: 60%;
     max-width: 60%;
+    background-color: var(--first-color);
 }
 
 .text-home-product{
@@ -93,6 +139,7 @@ body{
     flex-direction: column;
     gap: 2rem;
     margin-left: 3rem;
+    color: var(--title-color);
 }
 
 .p-description{
