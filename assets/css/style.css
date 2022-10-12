@@ -114,6 +114,37 @@ body.dark{
     gap: 50px;
 
 }
+/*NAV MENU hAMBURGUESA*/
+.input-menu{
+    display: none;
+}
+.nav--menu{
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    right: 1.5rem;
+    background-color:var(--container-color);
+    top: 95px;
+    padding: 1.5rem;
+    text-align: center;
+    display: none;
+    height: 100vh;
+}
+
+.input-menu:checked ~ .nav--menu{
+    display: block;
+}
+.nav--nav-item{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    
+}
+
+.nav--nav-item > a{
+    color:var(--first-color);
+    text-decoration: none;
+}
+
 
 
 /*DIV DEL PRODUCTO PRINCIPAL*/
